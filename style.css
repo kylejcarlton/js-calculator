@@ -16,5 +16,15 @@ body {
 #display {
   background: rgb(209,190,205);
   height: 100px;
+}
+#input{
+  padding-top: 100px;
+}
+.number{
 
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border-color: black;
+  border-style: solid;
 }
