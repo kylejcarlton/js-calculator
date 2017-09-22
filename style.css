@@ -19,12 +19,12 @@ body {
 }
 #input{
   padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .number{
-
   width: 60px;
   height: 60px;
-  display: inline-block;
   border-color: black;
   border-style: solid;
 }
