@@ -8,7 +8,7 @@ body {
   background: rgb(52, 73, 94);
   border-color: black;
   border-style: solid;
-  width: 212px;
+  width: 250px;
   height: 280px;
   margin: 0 auto;
   box-shadow: 10px 10px 5px #888888;
@@ -22,6 +22,10 @@ body {
 }
 #numbers{
 }
+li{
+  text-align: center;
+  vertical-align: middle;
+}
 li:hover{
   background-color: rgb(64, 89, 115);
 }
@@ -32,13 +36,13 @@ li:hover{
   margin: 0;
 }
 .numbers li {
-  border: 1px;
-  border-style: solid;
-  padding: 15px;
+  outline-style: solid;
+  outline-width: thin;
+  width: 50px;
+  height: 50px;
 }
 #period{
-  padding-left: 37px;
-  padding-right: 37px;
+  width: 100px;
 }
 .operators{
   display: flex;
@@ -48,9 +52,10 @@ li:hover{
   margin: 0;
 }
 .operators li {
-  border: 1px;
-  border-style: solid;
-  padding: 15px;
+  outline-style: solid;
+  outline-width: thin;
+  width: 50px;
+  height: 50px;
 }
 .actions{
   display: flex;
@@ -60,11 +65,11 @@ li:hover{
   margin: 0;
 }
 .actions li {
-  border: 1px;
-  border-style: solid;
-  padding: 15px;
+  outline-style: solid;
+  outline-width: thin;
+  width: 50px;
+  height: 50px;
 }
 #equals{
-  padding-top: 40px;
-  padding-bottom: 40px
+  height: 100px;
 }
