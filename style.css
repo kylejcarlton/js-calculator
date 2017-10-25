@@ -1,6 +1,9 @@
 body {
     background: rgb(202,194,192);
 }
+p{
+  color: white;
+}
 #main{
   padding-top: 25px;
 }
@@ -27,7 +30,8 @@ li{
   vertical-align: middle;
 }
 li:hover{
-  background-color: rgb(64, 89, 115);
+  //background-color: rgb(64, 89, 115);
+  background-color: rgb(41, 58, 75);
 }
 .numbers{
   display: flex;
