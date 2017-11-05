@@ -1,8 +1,16 @@
 body {
     background: rgb(202,194,192);
 }
+h1{
+  color: white;
+  margin: 0;
+  padding: 0 5px 0 0;
+}
 p{
   color: white;
+}
+#small p{
+  padding: 0 5px 0 0;
 }
 #main{
   padding-top: 25px;
@@ -19,6 +27,13 @@ p{
 #display {
   background: rgb(103, 137, 171);
   height: 80px;
+  text-align: right;
+}
+#total{
+
+}
+#calculation{
+
 }
 #input{
   display: flex;
