@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var calculation = [];
-  var operators ={plus:"+", minus:"-", multiply:"*", divide:"/", equals:" ="};
+  var operators ={plus:"+", minus:"-", multiply:"*", divide:"/"};
 
   $("ul.numbers li").click(function(){
     calculation.push($(this).attr("id"));
@@ -20,8 +20,7 @@ $(document).ready(function(){
       }
       if($(this).attr("id") == "equals"){
       $("#large").html(eval(calculation.join("")));
-      calculation.push(operators[$(this).attr("id")]);
-      $("#small").html(calculation.join(""));
+      $("#small").html(calculation.join("")+" =");
       //https://stackoverflow.com/questions/5834318/are-variable-operators-possible
 
       }
