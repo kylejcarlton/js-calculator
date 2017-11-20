@@ -17,6 +17,8 @@ $(document).ready(function(){
       }
       if($(this).attr("id") == "c"){
         calculation = [];
+        $("#large").html('<span id="cursor" style="color: rgb(103, 137, 171)">|</span>');
+        $("#small").html("");
       }
       if($(this).attr("id") == "equals"){
       $("#large").html(eval(calculation.join("")));
