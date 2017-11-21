@@ -21,10 +21,9 @@ $(document).ready(function(){
         $("#small").html("");
       }
       if($(this).attr("id") == "equals"){
-      $("#large").html(eval(calculation.join("")));
+      $("#large").html(Math.round(eval(calculation.join(""))), 2);
+      $("#small").html(calculation.join("")+" =");
       calculation = [];
-      $("#small").html("");
-      //$("#small").html(calculation.join("")+" =");
       //https://stackoverflow.com/questions/5834318/are-variable-operators-possible
 
       }
