@@ -4,16 +4,19 @@ body {
 h1{
   color: white;
   margin: 0;
-  padding: 0 5px 0 0;
+  padding: 0 5px 0 5px;
 }
 p{
   color: white;
+  //padding: 0;
+  //margin: 0;
 }
 #small p{
   padding: 0 5px 0 0;
 }
 #main{
   padding-top: 25px;
+  width: 300px;
 }
 #calc {
   background: rgb(52, 73, 94);
@@ -30,7 +33,7 @@ p{
   text-align: right;
 }
 #total{
-
+text-align: left;
 }
 #calculation{
 
@@ -47,6 +50,7 @@ li{
 li:hover{
   //background-color: rgb(64, 89, 115);
   background-color: rgb(41, 58, 75);
+
 }
 .numbers{
   display: flex;
