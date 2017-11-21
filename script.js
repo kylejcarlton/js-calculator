@@ -21,18 +21,15 @@ $(document).ready(function(){
     else{
       calculation.push($(this).attr("id"));
     }
-      //$("#small").html(calculation.join(""));
       maxLengthCheck();
   });
   $("ul.operators li").click(function(){
       calculation.push(operators[$(this).attr("id")]);
-      //$("#small").html(calculation.join(""));
       maxLengthCheck();
   });
   $("ul.actions li").click(function(){
       if($(this).attr("id") == "ce"){
         calculation.pop();
-        //$("#small").html(calculation.join(""));
         maxLengthCheck();
       }
       if($(this).attr("id") == "c"){
