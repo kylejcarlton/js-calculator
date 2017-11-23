@@ -38,11 +38,17 @@ $(document).ready(function(){
         $("#small").html("");
       }
       if($(this).attr("id") == "equals"){
-      $("#large").html(eval(calculation.join("")).toPrecision(3));
+      if(eval(calculation.join("")) > 9999999999){
+        $("#large").html(eval(calculation.join("")).toPrecision(3));
+      }
+      else{
+        $("#large").html(Number(eval(calculation.join("")).toFixed(2)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+        //https://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript
+      }
+
       $("#small").html(calculation.join("")+" =");
       calculation = [];
       //https://stackoverflow.com/questions/5834318/are-variable-operators-possible
-
       }
   });
 
